@@ -1,0 +1,28 @@
+.map-container{
+    display: flex;
+    flex-direction: column;
+}
+.block {
+  display: block;
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: -90px;
+  /* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="800" height="450" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <polygon fill = "white" stroke="#3f5787" stroke-width="3" points="
+    582.941769,591.780615
+    1240.522777,446.354046
+    1324.828033,707.700345
+    1259.491458,802.01685
+    922.270431,857.342175
+    909.624642,768.821655
+    616.663872,802.01685
+  " />
+</svg>*/
+  fill: black;
+
+  
+}
+.block:hover{
+    color: aqua;
+}
