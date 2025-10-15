@@ -1,28 +1,38 @@
-.map-container{
+.map{
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-}
-.block {
-  display: block;
-  width: 300px;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: -90px;
-  /* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="800" height="450" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
-  <polygon fill = "white" stroke="#3f5787" stroke-width="3" points="
-    582.941769,591.780615
-    1240.522777,446.354046
-    1324.828033,707.700345
-    1259.491458,802.01685
-    922.270431,857.342175
-    909.624642,768.821655
-    616.663872,802.01685
-  " />
-</svg>*/
-  fill: black;
+    justify-content: center;
 
-  
 }
-.block:hover{
-    color: aqua;
+.map-container{
+    width: 200px;
+    position: relative;
+}
+svg{
+    pointer-events: none;
+}
+svg path{
+    pointer-events: visiblePainted;
+}
+.lobby svg{
+    width: 127px !important;
+}
+.h svg{
+    width: 179px !important;
+}
+.block svg{
+  position: absolute;
+  width: 190px;
+  height: auto;
+  cursor: pointer;
+  transition:  0.3s;
+  transform: rotate(7.5deg);
+  fill: #fff;
+  stroke: black;
+}
+
+.block>svg:hover{
+  transform: rotate(7.5deg);
+  fill: aqua;
 }

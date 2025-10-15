@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import Map from './components/Map/Map'
+import Header from './components/Header'
 
 export default function App() {
   return (
     <>
-      <div>hello</div>
+      <Header></Header>
       <Map></Map>
     </>
   )
