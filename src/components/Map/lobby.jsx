@@ -4,12 +4,12 @@ export default function Lobby() {
 			<svg
 				id='esHF2076kpD1'
 				viewBox='0 0 493.5462 371.05426'
-				shape-rendering='geometricPrecision'
-				text-rendering='geometricPrecision'
+				shapeRendering='geometricPrecision'
+				textRendering='geometricPrecision'
 				version='1.1'
 				xmlns='http://www.w3.org/2000/svg'
 				width='143.5462'
-				style={{ top: '637px', left: '98px' }}
+				style={{ top: '339.2px', left: '115px' }}
 			>
 				<path
 					id='line13'

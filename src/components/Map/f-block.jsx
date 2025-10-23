@@ -4,12 +4,12 @@ export default function Fblock() {
 			<svg
 				id='ehpK4o31XE21'
 				viewBox='0 0 753.96528 491.65817'
-				shape-rendering='geometricPrecision'
-				text-rendering='geometricPrecision'
+				shapeRendering='geometricPrecision'
+				textRendering='geometricPrecision'
 				project-id='6548d77d10e546a69466c3e517593f3f'
 				version='1.1'
 				xmlns='http://www.w3.org/2000/svg'
-				style={{ top: '303px', left: '29px' }}
+				style={{ top: '164px', left: '76.3px' }}
 			>
 				<path
 					id='line19'

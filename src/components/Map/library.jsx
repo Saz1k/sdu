@@ -4,11 +4,11 @@ export default function Library() {
 			<svg
 				id='euL59ZdIhtm1'
 				viewBox='0 0 758.66455 419.30554'
-				shape-rendering='geometricPrecision'
-				text-rendering='geometricPrecision'
+				shapeRendering='geometricPrecision'
+				textRendering='geometricPrecision'
 				version='1.1'
 				xmlns='http://www.w3.org/2000/svg'
-				style={{ top: '678px', left: '-43px' }}
+				style={{ top: '360px', left: '41px' }}
 			>
 				<path
 					id='line6'

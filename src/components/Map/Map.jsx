@@ -8,20 +8,18 @@ import Lobby from './lobby.jsx'
 import Library from './library.jsx'
 import './Map.css'
 
-export default function Map() {
+export default function Map(props) {
 	return (
 		<>
-			<div className='map'>
-				<div className='map-container'>
-					<Iblock></Iblock>
-					<Hblock></Hblock>
-					<Gblock></Gblock>
-					<Fblock></Fblock>
-					<Eblock></Eblock>
-					<Dblock></Dblock>
-					<Lobby></Lobby>
-					<Library></Library>
-				</div>
+			<div className={`${props.className} map-container`}>
+				<Iblock></Iblock>
+				<Hblock></Hblock>
+				<Gblock></Gblock>
+				<Fblock></Fblock>
+				<Eblock></Eblock>
+				<Dblock></Dblock>
+				<Lobby></Lobby>
+				<Library></Library>
 			</div>
 		</>
 	)

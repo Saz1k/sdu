@@ -4,11 +4,11 @@ export default function Dblock() {
 			<svg
 				id='eZqE0KPsylT1'
 				viewBox='0 0 746.88623 415.98804'
-				shape-rendering='geometricPrecision'
-				text-rendering='geometricPrecision'
+				shapeRendering='geometricPrecision'
+				textRendering='geometricPrecision'
 				version='1.1'
 				xmlns='http://www.w3.org/2000/svg'
-				style={{ top: '540px', left: '24px' }}
+				style={{ top: '288px', left: '73.6px' }}
 			>
 				<path
 					id='line8'

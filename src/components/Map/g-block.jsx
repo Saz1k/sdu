@@ -1,14 +1,14 @@
 export default function Gblock() {
 	return (
-		<div className='block'>
+		<div className='block g'>
 			<svg
 				id='ecBVrNHs5Kz1'
 				viewBox='0 0 830.60297 662.59619'
-				shape-rendering='geometricPrecision'
-				text-rendering='geometricPrecision'
+				shapeRendering='geometricPrecision'
+				textRendering='geometricPrecision'
 				version='1.1'
 				xmlns='http://www.w3.org/2000/svg'
-				style={{ top: '170px', left: '44px' }}
+				style={{ top: '90px', left: '79.5px' }}
 			>
 				<path
 					id='line1'

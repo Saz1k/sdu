@@ -4,11 +4,11 @@ export default function Eblock() {
 			<svg
 				id='ejgMNGzDIlR1'
 				viewBox='0 0 704.96155 540.64252'
-				shape-rendering='geometricPrecision'
-				text-rendering='geometricPrecision'
+				shapeRendering='geometricPrecision'
+				textRendering='geometricPrecision'
 				version='1.1'
 				xmlns='http://www.w3.org/2000/svg'
-				style={{ top: '411px', left: '20px' }}
+				style={{ top: '220px', left: '71.5px' }}
 			>
 				<path
 					id='line1'

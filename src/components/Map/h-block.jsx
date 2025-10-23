@@ -4,11 +4,11 @@ export default function Hblock() {
 			<svg
 				id='eg2H58YZGos1'
 				viewBox='0 0 718.20496 413.78824'
-				shape-rendering='geometricPrecision'
-				text-rendering='geometricPrecision'
+				shapeRendering='geometricPrecision'
+				textRendering='geometricPrecision'
 				version='1.1'
 				xmlns='http://www.w3.org/2000/svg'
-				style={{ top: '90px', left: '33px' }}
+				style={{ top: '47px', left: '74px' }}
 			>
 				<path
 					id='line3'
