@@ -8,7 +8,7 @@ export default function iblock(){
 					textRendering='geometricPrecision'
 					version='1.1'
 					xmlns='http://www.w3.org/2000/svg'
-					style={{left: '60 }}
+					style={{left: '19px' }}
 				>
 					<path
 						id='path16'

@@ -1,0 +1,27 @@
+.floor{
+    padding: 8px;
+    border: none;
+    max-width: 30px;
+    background-color: white;
+    font-size: 10px;
+
+}
+.floor:not(:last-child ){
+    border-bottom: none;
+}
+.floor:not(:first-child ){
+    border-top: none;
+}
+.floor:first-child{
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+.floor:last-child{
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+}
+.active {
+    background-color: #212153;
+    color: white;
+}

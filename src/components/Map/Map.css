@@ -1,9 +1,17 @@
 
 .map-container{
-    width: 190px;
+    width: 150px;
     height: 418px;
     position: relative;
-    background-color: aliceblue;
+}
+
+.map-container:hover .floors {
+    opacity: 1;
+    pointer-events: auto;
+}
+.floors{
+    opacity: 0;
+    transition: all 0.5s;
 }
 svg{
     pointer-events: none;
@@ -27,11 +35,11 @@ svg path{
   cursor: pointer;
   transition:  0.3s;
   transform: rotate(7.5deg);
-  fill: #fff;
-  stroke: black;
+  fill: #f3efef;
+  stroke: #212153;
 }
 
 .block>svg:hover{
   transform: rotate(7.5deg);
-  fill: aqua;
+  fill: #212153;
 }

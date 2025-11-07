@@ -8,7 +8,7 @@ export default function Dblock() {
 				textRendering='geometricPrecision'
 				version='1.1'
 				xmlns='http://www.w3.org/2000/svg'
-				style={{ top: '288px', left: '73.6px' }}
+				style={{ top: '288px', left: '32.6px' }}
 			>
 				<path
 					id='line8'

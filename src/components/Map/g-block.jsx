@@ -8,7 +8,7 @@ export default function Gblock() {
 				textRendering='geometricPrecision'
 				version='1.1'
 				xmlns='http://www.w3.org/2000/svg'
-				style={{ top: '90px', left: '79.5px' }}
+				style={{ top: '90px', left: '38.5px' }}
 			>
 				<path
 					id='line1'
