@@ -8,7 +8,7 @@ export default function Hblock() {
 				textRendering='geometricPrecision'
 				version='1.1'
 				xmlns='http://www.w3.org/2000/svg'
-				style={{ top: '47px', left: '33px' }}
+				style={{ top: '47px', left: '43px' }}
 			>
 				<path
 					id='line3'

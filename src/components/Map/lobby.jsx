@@ -9,7 +9,7 @@ export default function Lobby() {
 				version='1.1'
 				xmlns='http://www.w3.org/2000/svg'
 				width='143.5462'
-				style={{ top: '339.2px', left: '74px' }}
+				style={{ top: '339.2px', left: '84px' }}
 			>
 				<path
 					id='line13'

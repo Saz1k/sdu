@@ -8,7 +8,7 @@ export default function Eblock() {
 				textRendering='geometricPrecision'
 				version='1.1'
 				xmlns='http://www.w3.org/2000/svg'
-				style={{ top: '220px', left: '30.5px' }}
+				style={{ top: '220px', left: '40.5px' }}
 			>
 				<path
 					id='line1'

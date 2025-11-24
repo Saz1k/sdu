@@ -4,6 +4,9 @@ export default function descriptions(props){
     const currentDescription = description.find(
 			current => current.id === currentDescriptions
 		)
+    if (!currentDescription) {
+        return <p>Description not found</p>
+    }
     return (
         <>
             <p>

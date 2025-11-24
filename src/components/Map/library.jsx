@@ -8,7 +8,7 @@ export default function Library() {
 				textRendering='geometricPrecision'
 				version='1.1'
 				xmlns='http://www.w3.org/2000/svg'
-				style={{ top: '360px' }}
+				style={{ top: '360px', left: '10px'}}
 			>
 				<path
 					id='line6'

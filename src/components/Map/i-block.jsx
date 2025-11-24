@@ -1,4 +1,4 @@
-export default function iblock(){
+export default function Iblock(){
    return (
 			<div className='block'>
 				<svg
@@ -8,7 +8,7 @@ export default function iblock(){
 					textRendering='geometricPrecision'
 					version='1.1'
 					xmlns='http://www.w3.org/2000/svg'
-					style={{left: '19px' }}
+					style={{left: '29px' }}
 				>
 					<path
 						id='path16'

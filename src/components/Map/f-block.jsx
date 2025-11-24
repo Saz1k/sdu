@@ -9,7 +9,7 @@ export default function Fblock() {
 				project-id='6548d77d10e546a69466c3e517593f3f'
 				version='1.1'
 				xmlns='http://www.w3.org/2000/svg'
-				style={{ top: '164px', left: '35.3px' }}
+				style={{ top: '164px', left: '45.3px' }}
 			>
 				<path
 					id='line19'

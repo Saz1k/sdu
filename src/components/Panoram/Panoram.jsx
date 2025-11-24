@@ -20,11 +20,11 @@ export default function Panoram({ currentPanoramaId, className }) {
 			plugins: [
 				[AutorotatePlugin, { autostartOnIdle: false, autorotatePitch: 0 }],
 			],
-            defaultTransition : {
-                speed : 1000,
-                rotation : true,
-                effect : 'fade',
-            },
+			defaultTransition: {
+				speed: 1000,
+				rotation: true,
+				effect: 'fade',
+			},
 		})
 
 		autorotateRef.current = viewer.getPlugin(AutorotatePlugin)
@@ -70,7 +70,7 @@ export default function Panoram({ currentPanoramaId, className }) {
 				if (isInitRef.current) {
 					intro(animatedValues.pitch.end, animatedValues.yaw.end)
 				}
-			}, )
+			})
 		})
 		return () => {
 			viewer.destroy()

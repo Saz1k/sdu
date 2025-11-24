@@ -12,7 +12,6 @@
     transform-origin: right center;
     transform: perspective(600px) rotateY(-60deg) translateY(-60%);
     will-change: transform;
-
 }
 .map:hover{
     transform: perspective(600px) rotateY(0deg) translateY(-60%);

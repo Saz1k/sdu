@@ -1,16 +1,22 @@
 
 .map-container{
-    width: 150px;
+    width: 160px;
     height: 418px;
     position: relative;
+
 }
 
-.map-container:hover .floors {
+.map-container:hover .floors{
     opacity: 1;
     pointer-events: auto;
 }
-.floors{
+.map-container:hover .points{
+    opacity: 1;
+    pointer-events: none;
+}
+.floors, .points{
     opacity: 0;
+      pointer-events: none;
     transition: all 0.5s;
 }
 svg{
@@ -41,5 +47,4 @@ svg path{
 
 .block>svg:hover{
   transform: rotate(7.5deg);
-  fill: #212153;
 }
