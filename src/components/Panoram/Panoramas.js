@@ -1,7 +1,16 @@
 const Panoramas = [
 	{
 		id: 110,
-		panorama: '/i1.JPG',
+		items: [
+			{
+				id: 110,
+				panorama: '/i1.JPG',
+			},
+			{
+				id: 111,
+				panorama: '/i11.JPG',
+			},
+		],
 	},
 	{
 		id: 111,
@@ -9,19 +18,81 @@ const Panoramas = [
 	},
 	{
 		id: 120,
-		panorama: '/i2.JPG',
+		items: [
+			{
+				id: 120,
+				panorama: '/i2.JPG',
+			},
+			{
+				id: 121,
+				panorama: '/i21.JPG',
+			},
+		],
+	},
+	{
+		id: 130,
+		items: [
+			{
+				id: 130,
+				panorama: '/i3.JPG',
+			},
+			{
+				id: 131,
+				panorama: '/i31.JPG',
+			},
+		],
 	},
 	{
 		id: 210,
-		panorama: '/h1.JPG',
+		items: [
+			{
+				id: 210,
+				panorama: '/h1.JPG',
+			},
+			{
+				id: 211,
+				panorama: '/h11.JPG',
+			},
+		],
 	},
 	{
 		id: 220,
-		panorama: '/h2.JPG',
+		items: [
+			{
+				id: 220,
+				panorama: '/h2.JPG',
+			},
+			{
+				id: 221,
+				panorama: '/h21.JPG',
+			},
+		],
+	},
+	{
+		id: 230,
+		items: [
+			{
+				id: 230,
+				panorama: '/h3.JPG',
+			},
+			{
+				id: 231,
+				panorama: '/h31.JPG',
+			},
+		],
 	},
 	{
 		id: 310,
-		panorama: '/g1.JPG',
+		items: [
+			{
+				id: 310,
+				panorama: '/g1.JPG',
+			},
+			{
+				id: 311,
+				panorama: '/g11.JPG',
+			},
+		],
 	},
 	{
 		id: 320,
@@ -33,7 +104,16 @@ const Panoramas = [
 	},
 	{
 		id: 410,
-		panorama: '/f1.JPG',
+		items: [
+			{
+				id: 410,
+				panorama: '/f1.JPG',
+			},
+			{
+				id: 411,
+				panorama: '/f11.JPG',
+			},
+		],
 	},
 	{
 		id: 420,
@@ -49,7 +129,16 @@ const Panoramas = [
 	},
 	{
 		id: 510,
-		panorama: '/e1.JPG',
+		items: [
+			{
+				id: 510,
+				panorama: '/e1.JPG',
+			},
+			{
+				id: 511,
+				panorama: '/e11.JPG',
+			},
+		],
 	},
 	{
 		id: 520,
@@ -61,7 +150,16 @@ const Panoramas = [
 	},
 	{
 		id: 611,
-		panorama: '/d1.JPG',
+		items: [
+			{
+				id: 611,
+				panorama: '/d1.JPG',
+			},
+			{
+				id: 615,
+				panorama: '/d11.JPG',
+			},
+		],
 	},
 	{
 		id: 612,
@@ -93,15 +191,20 @@ const Panoramas = [
 	},
 	{
 		id: 810,
-		panorama: '/lib1.JPG',
-	},
-	{
-		id: 811,
-		panorama: '/lib11.JPG',
-	},
-	{
-		id: 812,
-		panorama: '/lib12.JPG',
+		items: [
+			{
+				id: 810,
+				panorama: '/lib1.JPG',
+			},
+			{
+				id: 811,
+				panorama: '/lib11.JPG',
+			},
+			{
+				id: 812,
+				panorama: '/lib12.JPG',
+			},
+		],
 	},
 ]
 export default Panoramas

@@ -1,9 +1,32 @@
+.backcolor{
+    background-color: rgb(226, 231, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logoWrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo{
+    max-height: 60px;
+}
+
 .burgermenu{
     width: 40px;
     height: 40px;
     position: relative;
-    margin-right: 10px;
     cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 0;
 }
 .burgermenu span{
     height: 6px;
@@ -25,17 +48,11 @@
 .active span:nth-child(1){
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
- 
-    }
+}
 .active span:nth-child(2){
     opacity: 0;
-
-    }
+}
 .active span:nth-child(3){
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
-
-    }
-.backcolor{
-    background-color: rgb(226, 231, 239);
 }

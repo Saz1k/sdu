@@ -13,8 +13,9 @@
     width: 20px;
     height: 20px;
     position: absolute;
-    max-width: 15px;
+    max-width: 12px;
     transition: all .3s;
+    z-index: 10;
 }
 .svgs:hover{
     transform: scale(1.05);
@@ -24,13 +25,13 @@
     width: 100px;
     height: 50px;
     border-radius: 3px;
+    z-index: 9999 !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
     padding: 2px;
     font-size: 10px;
-    z-index: 120;
     color:#212153;
     border: 0.2px solid #a6a6a7;
     box-shadow: 0px 0px 2px;

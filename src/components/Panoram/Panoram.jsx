@@ -1,6 +1,7 @@
 import { Viewer, utils } from '@photo-sphere-viewer/core'
 import { AutorotatePlugin } from '@photo-sphere-viewer/autorotate-plugin'
 import '@photo-sphere-viewer/core/index.css'
+import classes from './Panoram.module.css'
 import { useEffect, useRef } from 'react'
 import Panoramas from './Panoramas' // твой список панорам [{id, panorama}]
 
@@ -9,14 +10,43 @@ export default function Panoram({ currentPanoramaId, className }) {
 	const autorotateRef = useRef()
 	const isInitRef = useRef(true)
 
+	const renderNavbar = (currentPanorama, index) => {
+		return [
+			'autorotate',
+			'zoom',
+			'caption',
+			{
+				id: 'change@center',
+				title: 'Change image',
+				content: 'next',
+				onClick(viewer) {
+					index++;
+					if (index === currentPanorama.items.length) index = 0;
+						viewer.setPanorama(currentPanorama.items[index].panorama)
+				},
+				className: classes.imageChanger,
+			},
+			'fullscreen',
+		]
+	}
+
 	useEffect(() => {
-		const currentPanorama = Panoramas.find(p => p.id === currentPanoramaId)
+		let currentPanorama = Panoramas.find(p => p.id === currentPanoramaId)
+		let index = 0;
 		if (!currentPanorama) return
 
 		const viewer = new Viewer({
 			container: viewerRef.current,
-			panorama: currentPanorama.panorama,
-			navbar: ['autorotate', 'zoom', 'caption', 'fullscreen'],
+			panorama:
+				'panorama' in currentPanorama
+					? currentPanorama.panorama
+					: currentPanorama.items[index].panorama,
+			navbar:
+				'panorama' in currentPanorama
+					? renderNavbar()
+					: renderNavbar(
+							currentPanorama, index
+					  ),
 			plugins: [
 				[AutorotatePlugin, { autostartOnIdle: false, autorotatePitch: 0 }],
 			],
