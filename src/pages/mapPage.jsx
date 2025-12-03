@@ -14,7 +14,7 @@ export default function mapPage(){
 					currentPanoramaId={currentPanoramaId}
 					className={classes.panoram}
 				></Panoram>
-				<Descriptions currentDescription={currentPanoramaId		}></Descriptions>
+				<Descriptions currentDescription={currentPanoramaId}></Descriptions>
 			</div>
 		)
 }

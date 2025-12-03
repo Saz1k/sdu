@@ -1,5 +1,30 @@
 const Panoramas = [
 	{
+		id: 800,
+		items: [
+			{
+				id: 800,
+				panorama: '/lib0.JPG',
+			},
+			{
+				id: 801,
+				panorama: '/lib01.JPG',
+			},
+			{
+				id: 802,
+				panorama: '/lib02.JPG',
+			},
+			{
+				id: 803,
+				panorama: '/lib03.JPG',
+			},
+		],
+	},
+	{
+		id: 500,
+		panorama: '/eblock0.JPG'
+	},
+	{
 		id: 110,
 		items: [
 			{
@@ -96,7 +121,16 @@ const Panoramas = [
 	},
 	{
 		id: 320,
-		panorama: '/g2.JPG',
+		items: [
+			{
+				id: 320,
+				panorama: '/g2.JPG',
+			},
+			{
+				id: 321,
+				panorama: '/g21.JPG',
+			},
+		],
 	},
 	{
 		id: 330,
@@ -116,8 +150,21 @@ const Panoramas = [
 		],
 	},
 	{
+		id: 412,
+		panorama: '/kitchen1.JPG',
+	},
+	{
 		id: 420,
-		panorama: '/f2.JPG',
+		items: [
+			{
+				id: 420,
+				panorama: '/f2.JPG',
+			},
+			{
+				id: 421,
+				panorama: '/f21.JPG',
+			},
+		],
 	},
 	{
 		id: 430,
@@ -142,7 +189,16 @@ const Panoramas = [
 	},
 	{
 		id: 520,
-		panorama: '/e2.JPG',
+		items: [
+			{
+				id: 520,
+				panorama: '/e2.JPG',
+			},
+			{
+				id: 521,
+				panorama: '/e21.JPG',
+			},
+		],
 	},
 	{
 		id: 610,
@@ -175,7 +231,16 @@ const Panoramas = [
 	},
 	{
 		id: 620,
-		panorama: '/d2.jpg',
+		items: [
+			{
+				id: 620,
+				panorama: '/d2.JPG',
+			},
+			{
+				id: 621,
+				panorama: '/d21.JPG',
+			},
+		],
 	},
 	{
 		id: 710,

@@ -11,7 +11,49 @@ export default function Points(props){
             props.pointClick(point)
         }
     }
-    if (props.floor === 1) {
+	if (props.floor === -1) {
+			return (
+				<div
+					className={`${classes.container} ${props.className}`}
+					style={{ zIndex: 10 }}
+				>
+					{PointsLocation.map(e => {
+						if (e.id % 100 >= 0 && e.id % 100 < 10) {
+							return (
+								<>
+									<div
+										style={{ left: `${e.left}px`, top: `${e.top}px` }}
+										className={classes.svgs}
+									>
+										<img
+											src={e.src}
+											onMouseEnter={() => setHover(e.id)}
+											onMouseLeave={() => setHover(0)}
+											style={{ left: 'inherit', top: 'inherit' }}
+											onClick={() => handlePointClick(e.id)}
+										/>
+									</div>
+									{hover === e.id && (
+										<div
+											className={classes.info}
+											style={{
+												left: `${e.left - 45}px`,
+												top: `${e.top - 50}px`,
+											}}
+										>
+											<h4>SDU Store</h4>
+											<p>blablablabla</p>
+										</div>
+									)}
+								</>
+							)
+						}
+						return null
+					})}
+				</div>
+			)
+		}
+    else if (props.floor === 1) {
 			return (
 				<div
 					className={`${classes.container} ${props.className}`}
@@ -65,6 +107,7 @@ export default function Points(props){
 									<div
 										style={{ left: `${e.left}px`, top: `${e.top}px` }}
 										className={classes.svgs}
+								
 									>
 										<img
 											src={e.src}
@@ -72,6 +115,7 @@ export default function Points(props){
 											onMouseLeave={() => setHover(0)}
 											style={{ left: 'inherit', top: 'inherit' }}
 											onClick={() => handlePointClick(e.id)}
+										
 										/>
 									</div>
 									{hover === e.id && (

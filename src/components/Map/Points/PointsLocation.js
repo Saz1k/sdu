@@ -2,9 +2,16 @@ import Library from '../../../assets/Library.svg'
 import clothingStore from '../../../assets/clothingStore.svg'
 import location from '../../../assets/Location.svg'
 import book from '../../../assets/book.svg'
+import kitchen from '../../../assets/kitchen.svg'
 
 const PointsLocation = [
-	{ id: 810, left: 49, top: 382, src: Library, },
+	{ id: 800, left: 59, top: 387, src: Library },
+
+	{ id: 500, left: 50, top: 238, src: location },
+
+
+
+	{ id: 810, left: 59, top: 387, src: Library },
 
 	{ id: 712, left: 89, top: 342, src: clothingStore },
 
@@ -24,13 +31,28 @@ const PointsLocation = [
 
 	{ id: 510, left: 105, top: 238, src: location },
 
-	{ id: 410, left: 105, top: 180, src: location },
+	{ id: 410, left: 90, top: 175, src: location },
+
+	{ id: 412, left: 115, top: 190, src: kitchen },
 
 	{ id: 310, left: 95, top: 127, src: location },
 
 	{ id: 210, left: 85, top: 69, src: location },
 
 	{ id: 110, left: 85, top: 9, src: location },
+
+
+	{ id: 620, left: 85, top: 307, src: location },
+
+	{ id: 520, left: 85, top: 238, src: location },
+
+	{ id: 420, left: 85, top: 180, src: location },
+
+	{ id: 320, left: 87, top: 127, src: location },
+
+	{ id: 220, left: 85, top: 69, src: location },
+
+	{ id: 120, left: 75, top: 19, src: location },
 ]
 
 export default PointsLocation
