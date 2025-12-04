@@ -1,6 +1,122 @@
-.imageChanger{
-    margin-right: auto;
-    margin-left: auto;
-    width: fit-content;
-    background-color: cadetblue;
+.panoramWrapper {
+	position: relative;
+	width: 100%;
+}
+
+/* Navigation integrated with navbar style - aligned with navbar */
+.navigation {
+	position: absolute;
+	bottom: 7px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	padding: 0;
+	margin: 0;
+	height: auto;
+	z-index: 51;
+	pointer-events: none;
+}
+
+.navigation > * {
+	pointer-events: all;
+}
+
+.navButton {
+	background: transparent;
+	border: none;
+	color: rgba(255, 255, 255, 0.9);
+	cursor: pointer;
+	padding: 4px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2px;
+	transition: background-color 0.2s ease;
+	width: 28px;
+	height: 28px;
+	flex-shrink: 0;
+	vertical-align: middle;
+}
+
+.navButton:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.navButton:active {
+	background: rgba(255, 255, 255, 0.15);
+}
+
+.navButton svg {
+	width: 14px;
+	height: 14px;
+}
+
+.dots {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 0 4px;
+}
+
+.dot {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.5);
+	border: none;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	padding: 0;
+	flex-shrink: 0;
+}
+
+.dot:hover {
+	background: rgba(255, 255, 255, 0.7);
+	transform: scale(1.2);
+}
+
+.dotActive {
+	background: #3c3c7e;
+	width: 8px;
+	height: 8px;
+	box-shadow: 0 0 0 2px rgba(60, 60, 126, 0.3);
+}
+
+.dotActive:hover {
+	background: #4a4a8e;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+	.navigation {
+		gap: 10px;
+	}
+
+	.navButton {
+		width: 28px;
+		height: 28px;
+		padding: 6px;
+	}
+
+	.navButton svg {
+		width: 14px;
+		height: 14px;
+	}
+
+	.dots {
+		gap: 5px;
+	}
+
+	.dot {
+		width: 5px;
+		height: 5px;
+	}
+
+	.dotActive {
+		width: 7px;
+		height: 7px;
+	}
 }

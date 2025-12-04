@@ -271,5 +271,62 @@ const Panoramas = [
 			},
 		],
 	},
+	// Dormitory panoramas
+	{
+		id: 901,
+		items: [
+			{
+				id: 901,
+				panorama: '/d1.JPG',
+			},
+			{
+				id: 9011,
+				panorama: '/d11.JPG',
+			},
+		],
+	},
+	{
+		id: 902,
+		items: [
+			{
+				id: 902,
+				panorama: '/d2.JPG',
+			},
+			{
+				id: 9021,
+				panorama: '/d21.JPG',
+			},
+		],
+	},
+	{
+		id: 903,
+		items: [
+			{
+				id: 903,
+				panorama: '/d3.JPG',
+			},
+			{
+				id: 9031,
+				panorama: '/d31.JPG',
+			},
+		],
+	},
+	{
+		id: 904,
+		panorama: '/lobby.JPG',
+	},
+	{
+		id: 905,
+		items: [
+			{
+				id: 905,
+				panorama: '/e1.JPG',
+			},
+			{
+				id: 9051,
+				panorama: '/e11.JPG',
+			},
+		],
+	},
 ]
 export default Panoramas

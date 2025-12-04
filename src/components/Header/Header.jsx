@@ -3,7 +3,7 @@ import logo from '../../assets/sdu_logo.svg'
 import classes from './Header.module.css'
 import Sidebar from './Sidebar'
 
-export default function Header() {
+export default function Header(props) {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
 	const toggleSidebar = useCallback(() => {
@@ -17,11 +17,6 @@ export default function Header() {
 	return (
 		<>
 			<header className={classes.backcolor}>
-				<div style={{ flexGrow: 1 }}></div>
-				<div className={classes.logoWrapper}>
-					<img src={logo} alt='sdu_logo' className={classes.logo} />
-				</div>
-				<div style={{ flexGrow: 1 }}></div>
 				<button
 					type='button'
 					className={`${classes.burgermenu} ${
@@ -34,8 +29,21 @@ export default function Header() {
 					<span></span>
 					<span></span>
 				</button>
+				<div style={{ flexGrow: 1 }}></div>
+				<div
+					className={classes.logoWrapper}
+					onClick={props.onHomeClick}
+					style={props.onHomeClick ? { cursor: 'pointer' } : {}}
+				>
+					<img src={logo} alt='sdu_logo' className={classes.logo} />
+				</div>
+				<div style={{ flexGrow: 1 }}></div>
 			</header>
-			<Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
+			<Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} campusChanger={(id) => {
+				if (props.onClic) {
+					props.onClic(id)
+				}
+			}}/>
 		</>
 	)
 }

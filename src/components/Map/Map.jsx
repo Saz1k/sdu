@@ -20,12 +20,6 @@ export default function Map(props) {
 		setFloor(fl)
 	}
 
-	const mapClicked = (btn)=>{
-		if(props.onMapClick){
-			props.onMapClick(btn.id)
-		}
-	}
-
 	return (
 		<>
 			<div className={`${props.className} map-container`}>
