@@ -3,13 +3,14 @@ import MapPage from './pages/mapPage'
 import WelcomeScreen from './components/WelcomeScreen/WelcomeScreen'
 import HomeScreen from './pages/HomeScreen'
 import PlaceholderSection from './components/PlaceholderSection/PlaceholderSection'
+import EmptyRoomsPage from './pages/EmptyRoomsPage'
 import { useState } from 'react'
 import classes from './App.module.css'
 
 export default function App() {
 	const [campusId, setCampusId] = useState(1)
 	const [welcomeDone, setWelcomeDone] = useState(false)
-	const [screen, setScreen] = useState('home') // 'home', 'panorama', 'rooms', 'events', 'campus-info'
+	const [screen, setScreen] = useState('home')
 	const [isTransitioning, setIsTransitioning] = useState(false)
 
 	const handleWelcomeComplete = () => {
@@ -54,8 +55,15 @@ export default function App() {
 							setScreen('panorama')
 						}}
 						onHomeClick={handleBackToHome}
+						onScreenChange={handleScreenSelect}
 					/>
 					<MapPage campusId={campusId} />
+				</div>
+			)}
+
+			{welcomeDone && screen === 'empty-rooms' && (
+				<div className={classes.screenWrapper}>
+					<EmptyRoomsPage onBack={handleBackToHome} onScreenChange={handleScreenSelect} />
 				</div>
 			)}
 

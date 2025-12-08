@@ -5,7 +5,7 @@
 }
 .map{
     position: absolute;
-    top:50%;
+    top:450px;
     right:0;
     z-index: 10;
     transition: transform 0.4s ease;

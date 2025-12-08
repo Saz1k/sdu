@@ -1,15 +1,14 @@
 import { useEffect, useState } from 'react'
 import classes from './HomeScreen.module.css'
 import logo from '../assets/sdu_logo.svg'
-import Library from '../assets/Library.svg'
-import dormitory from '../assets/dormitory.svg'
-import book from '../assets/book.svg'
+import panorama from '../assets/panorama.svg'
+import classroom from '../assets/classroom.svg'
+import events from '../assets/events.svg'
 
 export default function HomeScreen({ onSelectSection, isExiting }) {
 	const [isVisible, setIsVisible] = useState(false)
 
 	useEffect(() => {
-		// Fade in animation
 		setTimeout(() => {
 			setIsVisible(true)
 		}, 100)
@@ -22,7 +21,11 @@ export default function HomeScreen({ onSelectSection, isExiting }) {
 	}
 
 	return (
-		<div className={`${classes.homeScreen} ${isVisible ? classes.visible : ''} ${isExiting ? classes.exiting : ''}`}>
+		<div
+			className={`${classes.homeScreen} ${isVisible ? classes.visible : ''} ${
+				isExiting ? classes.exiting : ''
+			}`}
+		>
 			<div className={classes.container}>
 				<div className={classes.header}>
 					<img src={logo} alt='SDU Logo' className={classes.logo} />
@@ -37,7 +40,7 @@ export default function HomeScreen({ onSelectSection, isExiting }) {
 						aria-label='View Panoramas'
 					>
 						<div className={classes.cardIcon}>
-							<img src={Library} alt='Panoramas' />
+							<img src={panorama} alt='Panoramas' />
 						</div>
 						<h3 className={classes.cardTitle}>Panoramas</h3>
 						<p className={classes.cardDescription}>
@@ -47,16 +50,14 @@ export default function HomeScreen({ onSelectSection, isExiting }) {
 
 					<button
 						className={classes.card}
-						onClick={() => handleCardClick('rooms')}
-						aria-label='View Rooms'
+						onClick={() => handleCardClick('empty-rooms')}
+						aria-label='View Empty Rooms'
 					>
 						<div className={classes.cardIcon}>
-							<img src={dormitory} alt='Rooms' />
+							<img src={classroom} alt='Empty Rooms' />
 						</div>
-						<h3 className={classes.cardTitle}>Free Rooms</h3>
-						<p className={classes.cardDescription}>
-							Find free rooms to study
-						</p>
+						<h3 className={classes.cardTitle}>Empty Rooms</h3>
+						<p className={classes.cardDescription}>Find free rooms to study</p>
 					</button>
 
 					<button
@@ -65,7 +66,7 @@ export default function HomeScreen({ onSelectSection, isExiting }) {
 						aria-label='View Events'
 					>
 						<div className={classes.cardIcon}>
-							<img src={book} alt='Events' />
+							<img src={events} alt='Events' />
 						</div>
 						<h3 className={classes.cardTitle}>Events</h3>
 						<p className={classes.cardDescription}>
@@ -79,4 +80,3 @@ export default function HomeScreen({ onSelectSection, isExiting }) {
 		</div>
 	)
 }
-

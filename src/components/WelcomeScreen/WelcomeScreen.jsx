@@ -7,7 +7,6 @@ export default function WelcomeScreen({ onComplete }) {
 	const [isAnimating, setIsAnimating] = useState(true)
 
 	useEffect(() => {
-		// Скрываем экран через 3 секунды
 		const timer = setTimeout(() => {
 			setIsAnimating(false)
 			setTimeout(() => {
@@ -15,8 +14,8 @@ export default function WelcomeScreen({ onComplete }) {
 				if (onComplete) {
 					onComplete()
 				}
-			}, 500) // Ждем завершения анимации исчезновения
-		}, 3300)
+			}, 500)
+		}, 3000)
 
 		return () => clearTimeout(timer)
 	}, [onComplete])

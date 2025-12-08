@@ -22,7 +22,7 @@ export default function Map(props) {
 
 	return (
 		<>
-			<div className={`${props.className} map-container`}>
+			<div className={`${props.className}  map-container`}>
 				<Iblock></Iblock>
 				<Hblock></Hblock>
 				<Gblock></Gblock>

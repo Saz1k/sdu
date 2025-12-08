@@ -1,6 +1,6 @@
 .dormitoryContainer {
 	width: 160px;
-	height: 418px;
+	height: 260px;
 	position: relative;
 }
 
@@ -17,6 +17,7 @@
 	top: 0;
 	left: 0;
 	pointer-events: none;
+	transform: rotate(7.5deg);
 }
 
 .pointsContainer {
@@ -25,7 +26,12 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 10;
+	z-index: 2;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.pointsContainer:hover{
+	opacity: 1;
 }
 
 .pointWrapper {
@@ -36,7 +42,6 @@
 	position: absolute;
 	cursor: pointer;
 	transition: transform 0.2s ease;
-	z-index: 11;
 }
 
 .point:hover {
@@ -44,33 +49,24 @@
 }
 
 .point img {
-	width: 24px;
-	height: 24px;
-	filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+	width: 14px;
+	height: 14px;
 }
 
 .info {
-	position: absolute;
-	background: rgba(60, 60, 126, 0.95);
-	color: white;
-	padding: 8px 12px;
-	border-radius: 6px;
-	font-size: 12px;
-	white-space: nowrap;
-	z-index: 20;
-	pointer-events: none;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+ 	width: 100px;
+    height: 50px;
+    border-radius: 3px;
+    z-index: 14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 2px;
+    font-size: 10px;
+    color:#212153;
+    border: 0.2px solid #a6a6a7;
+    box-shadow: 0px 0px 2px;
+    position: absolute;
+    background-color: #fffefe;
 }
-
-.info h4 {
-	margin: 0 0 4px 0;
-	font-size: 13px;
-	font-weight: 600;
-}
-
-.info p {
-	margin: 0;
-	font-size: 11px;
-	opacity: 0.9;
-}
-

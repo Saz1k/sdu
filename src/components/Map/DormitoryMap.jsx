@@ -4,14 +4,13 @@ import location from '../../assets/Location.svg'
 import classes from './DormitoryMap.module.css'
 
 const DormitoryPoints = [
-	{ id: 901, left: 60, top: 50, src: location },
-	{ id: 902, left: 85, top: 90, src: location },
-	{ id: 903, left: 65, top: 130, src: location },
-	{ id: 904, left: 90, top: 170, src: location },
-	{ id: 905, left: 70, top: 210, src: location },
+	{ id: 901, left: 133, top: 120, src: location },
+	{ id: 902, left: 65, top: 85, src: location },
+	{ id: 903, left: 115, top: 200, src: location },
+	{ id: 904, left: 105, top: 130, src: location },
 ]
 
-export default function DormitoryMap({ onMapClick }) {
+export default function DormitoryMap({ onMapClick, clas}) {
 	const [hover, setHover] = useState(null)
 
 	const handlePointClick = pointId => {
@@ -21,9 +20,13 @@ export default function DormitoryMap({ onMapClick }) {
 	}
 
 	return (
-		<div className={classes.dormitoryContainer}>
+		<div className={classes.dormitoryContainer + ' ' + clas}>
 			<div className={classes.svgWrapper}>
-				<img src={dormitorySvg} alt='Dormitory' className={classes.dormitorySvg} />
+				<img
+					src={dormitorySvg}
+					alt='Dormitory'
+					className={classes.dormitorySvg}
+				/>
 				<div className={classes.pointsContainer}>
 					{DormitoryPoints.map(point => (
 						<div key={point.id} className={classes.pointWrapper}>
@@ -55,4 +58,3 @@ export default function DormitoryMap({ onMapClick }) {
 		</div>
 	)
 }
-

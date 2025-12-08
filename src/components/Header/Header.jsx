@@ -39,11 +39,16 @@ export default function Header(props) {
 				</div>
 				<div style={{ flexGrow: 1 }}></div>
 			</header>
-			<Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} campusChanger={(id) => {
-				if (props.onClic) {
-					props.onClic(id)
-				}
-			}}/>
+			<Sidebar
+				isOpen={isSidebarOpen}
+				onClose={closeSidebar}
+				campusChanger={id => {
+					if (props.onClic) {
+						props.onClic(id)
+					}
+				}}
+				screenChanger={props.onScreenChange}
+			/>
 		</>
 	)
 }

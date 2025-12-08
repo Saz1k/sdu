@@ -9,14 +9,27 @@ const menuItems = [
 			{ label: 'Campus map' },
 			{ label: 'Dormitory map' },
 			{ label: 'SDU life map' },
+			{ label: 'Outside overview' },
 		],
 	},
+	{ label: 'Empty Rooms' },
 	{ label: 'Events' },
-	{ label: 'Classes' },
 ]
 
-export default function Sidebar({ isOpen, onClose, campusChanger}) {
+export default function Sidebar({
+	isOpen,
+	onClose,
+	campusChanger,
+	screenChanger,
+}) {
 	const [expandedSection, setExpandedSection] = useState(null)
+	const [scrollTop, setScrollTop] = useState(0)
+
+	useEffect(() => {
+		if (isOpen) {
+			setScrollTop(window.scrollY)
+		}
+	}, [isOpen])
 
 	useEffect(() => {
 		document.body.style.overflow = isOpen ? 'hidden' : 'unset'
@@ -42,16 +55,46 @@ export default function Sidebar({ isOpen, onClose, campusChanger}) {
 			setExpandedSection(prev => (prev === item.label ? null : item.label))
 			return
 		}
+
+		// Handle direct menu items
+		if (item.label === 'Empty Rooms' && screenChanger) {
+			screenChanger('empty-rooms')
+		} else if (item.label === 'Events' && screenChanger) {
+			screenChanger('events')
+		}
+
 		onClose()
 	}
 
-	const handleSubItemClick = (subItemLabel) => {
+	const handleSubItemClick = subItemLabel => {
 		if (subItemLabel === 'Campus map') {
-			campusChanger(1)
+			if (campusChanger) {
+				campusChanger(1)
+			}
+			if (screenChanger) {
+				screenChanger('panorama')
+			}
 		} else if (subItemLabel === 'Dormitory map') {
-			campusChanger(2)
+			if (campusChanger) {
+				campusChanger(2)
+			}
+			if (screenChanger) {
+				screenChanger('panorama')
+			}
 		} else if (subItemLabel === 'SDU life map') {
-			campusChanger(3)
+			if (campusChanger) {
+				campusChanger(3)
+			}
+			if (screenChanger) {
+				screenChanger('panorama')
+			}
+		} else if (subItemLabel === 'Outside overview') {
+			if (campusChanger) {
+				campusChanger(4)
+			}
+			if (screenChanger) {
+				screenChanger('panorama')
+			}
 		}
 		onClose()
 	}
@@ -69,6 +112,7 @@ export default function Sidebar({ isOpen, onClose, campusChanger}) {
 			></div>
 
 			<aside
+				style={{ top: scrollTop }}
 				className={`${classes.sidebar} ${isOpen ? classes.sidebarOpen : ''}`}
 				aria-label='Navigation menu'
 				aria-hidden={!isOpen}

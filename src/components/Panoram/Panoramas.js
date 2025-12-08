@@ -22,7 +22,11 @@ const Panoramas = [
 	},
 	{
 		id: 500,
-		panorama: '/eblock0.JPG'
+		panorama: '/eblock0.JPG',
+	},
+	{
+		id: 200,
+		panorama: '/h0kanteen.JPG',
 	},
 	{
 		id: 110,
@@ -38,7 +42,7 @@ const Panoramas = [
 		],
 	},
 	{
-		id: 111,
+		id: 112,
 		panorama: '/i111.JPG',
 	},
 	{
@@ -120,6 +124,10 @@ const Panoramas = [
 		],
 	},
 	{
+		id: 312,
+		panorama: '/meetingRoom.JPG',
+	},
+	{
 		id: 320,
 		items: [
 			{
@@ -134,7 +142,16 @@ const Panoramas = [
 	},
 	{
 		id: 330,
-		panorama: '/g3.JPG',
+		items: [
+			{
+				id: 330,
+				panorama: '/g3.JPG',
+			},
+			{
+				id: 331,
+				panorama: '/g31.JPG',
+			},
+		],
 	},
 	{
 		id: 410,
@@ -151,7 +168,24 @@ const Panoramas = [
 	},
 	{
 		id: 412,
-		panorama: '/kitchen1.JPG',
+		items: [
+			{
+				id: 412,
+				panorama: '/kitchen1.JPG',
+			},
+			{
+				id: 413,
+				panorama: '/kitchen11.JPG',
+			},
+		],
+	},
+	{
+		id: 415,
+		panorama: '/kanteen1.JPG',
+	},
+	{
+		id: 414,
+		panorama: '/redCoffee.JPG',
 	},
 	{
 		id: 420,
@@ -168,7 +202,29 @@ const Panoramas = [
 	},
 	{
 		id: 430,
-		panorama: '/f3.JPG',
+		items: [
+			{
+				id: 430,
+				panorama: '/f3.JPG',
+			},
+			{
+				id: 431,
+				panorama: '/f31.JPG',
+			},
+		],
+	},
+	{
+		id: 432,
+		items: [
+			{
+				id: 432,
+				panorama: '/f3canteen.JPG',
+			},
+			{
+				id: 433,
+				panorama: '/f3kanteen1.JPG',
+			},
+		],
 	},
 	{
 		id: 500,
@@ -199,6 +255,23 @@ const Panoramas = [
 				panorama: '/e21.JPG',
 			},
 		],
+	},
+	{
+		id: 530,
+		items: [
+			{
+				id: 530,
+				panorama: '/e3.JPG',
+			},
+			{
+				id: 531,
+				panorama: '/e31.JPG',
+			},
+		],
+	},
+	{
+		id: 532,
+		panorama: '/e32.JPG',
 	},
 	{
 		id: 610,
@@ -243,17 +316,44 @@ const Panoramas = [
 		],
 	},
 	{
-		id: 710,
-		panorama: '/lobby.JPG',
+		id: 630,
+		items: [
+			{
+				id: 630,
+				panorama: '/d3.JPG',
+			},
+			{
+				id: 631,
+				panorama: '/d31.JPG',
+			},
+		],
 	},
 	{
-		id: 711,
-		panorama: '/lobbyd1.JPG',
+		id: 632,
+		panorama: '/d32.JPG',
+	},
+	{
+		id: 710,
+		items: [
+			{
+				id: 710,
+				panorama: '/lobby.JPG',
+			},
+			{
+				id: 711,
+				panorama: '/lobbyd1.JPG',
+			},
+		],
 	},
 	{
 		id: 712,
 		panorama: '/sdustore.JPG',
 	},
+	{
+		id: 713,
+		panorama: '/wifi_zone.JPG',
+	},
+
 	{
 		id: 810,
 		items: [
@@ -271,60 +371,65 @@ const Panoramas = [
 			},
 		],
 	},
+	{
+		id: 813,
+		panorama: '/library_outside.JPG',
+	},
 	// Dormitory panoramas
 	{
 		id: 901,
-		items: [
-			{
-				id: 901,
-				panorama: '/d1.JPG',
-			},
-			{
-				id: 9011,
-				panorama: '/d11.JPG',
-			},
-		],
+		panorama: '/dormbil.JPG',
 	},
 	{
 		id: 902,
-		items: [
-			{
-				id: 902,
-				panorama: '/d2.JPG',
-			},
-			{
-				id: 9021,
-				panorama: '/d21.JPG',
-			},
-		],
+		panorama: '/dormbin.JPG',
 	},
 	{
 		id: 903,
-		items: [
-			{
-				id: 903,
-				panorama: '/d3.JPG',
-			},
-			{
-				id: 9031,
-				panorama: '/d31.JPG',
-			},
-		],
+		panorama: '/dormcin.JPG',
 	},
 	{
 		id: 904,
-		panorama: '/lobby.JPG',
+		panorama: '/dormcst.JPG',
+	},
+
+	// SduLife panoramas
+
+	{
+		id: 11,
+		panorama: '/lifeOutside.JPG',
 	},
 	{
-		id: 905,
+		id: 12,
+		panorama: '/lifeGym.JPG',
+	},
+	{
+		id: 13,
+		panorama: '/life.JPG',
+	},
+	{
+		id: 14,
+		panorama: '/lifeVol.JPG',
+	},
+	//outside
+	{
+		id: 1,
 		items: [
 			{
-				id: 905,
-				panorama: '/e1.JPG',
+				id: 1,
+				panorama: '/outside1.JPG',
 			},
 			{
-				id: 9051,
-				panorama: '/e11.JPG',
+				id: 2,
+				panorama: '/outside2.JPG',
+			},
+			{
+				id: 3,
+				panorama: '/outside3.JPG',
+			},
+			{
+				id: 4,
+				panorama: '/outside4.JPG',
 			},
 		],
 	},
