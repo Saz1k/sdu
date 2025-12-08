@@ -417,7 +417,7 @@ const Panoramas = [
 		items: [
 			{
 				id: 1,
-				panorama: '/outside1.JPG',
+				panorama: '/outside1.jpg',
 			},
 			{
 				id: 2,
