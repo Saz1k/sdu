@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Map from '../components/Map/Map'
 import DormitoryMap from '../components/Map/DormitoryMap'
-import SduLifeMap from '../components/Map/sduLifeMap'
+import SduLifeMap from '../components/Map/SduLifeMap'
 import Panoram from '../components/Panoram/Panoram'
 import classes from './mapPage.module.css'
 import Descriptions from '../components/descriptions/descriptions'

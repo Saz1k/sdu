@@ -205,16 +205,6 @@ export default function Sidebar({
 						)
 					})}
 				</nav>
-
-				<div className={classes.sidebarFooter}>
-					<button
-						type='button'
-						className={classes.menuItem}
-						onClick={handleFooterItemClick}
-					>
-						<span>About us</span>
-					</button>
-				</div>
 			</aside>
 		</>
 	)
